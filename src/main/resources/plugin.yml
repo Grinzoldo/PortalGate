@@ -1,0 +1,22 @@
+name: PortalGate
+version: 1.0.0
+main: de.portalgate.PortalGate
+api-version: '26.1'
+description: Admins schalten End und Nether frei. Vorher funktionieren die Portale nicht.
+commands:
+  end:
+    description: End oeffnen, schliessen oder Status anzeigen
+    usage: /end <open|close|status>
+    permission: portalgate.admin
+  open:
+    description: Nether oder End oeffnen
+    usage: /open <nether|end>
+    permission: portalgate.admin
+  close:
+    description: Nether oder End schliessen
+    usage: /close <nether|end>
+    permission: portalgate.admin
+permissions:
+  portalgate.admin:
+    description: Darf End und Nether oeffnen und schliessen
+    default: op
